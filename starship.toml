@@ -1,0 +1,38 @@
+# ~/.config/starship.toml
+
+scan_timeout = 10
+add_newline = false
+
+[character]
+success_symbol = "[](bold green)"
+error_symbol = "[](bold red)"
+
+[git_branch]
+format = "[$symbol](green)[$branch]($style) "
+style = "italic green"
+symbol = " "
+
+[git_status]
+format = "[$all_status$ahead_behind]($style) "
+ahead = "⇡ $count "
+behind = "⇣ $count "
+deleted = " $count "
+diverged = " $count "
+modified = "  $count "
+staged = '[ $count ](yellow)'
+renamed = " $count "
+untracked = " $count "
+style = "bold red"
+
+[package]
+symbol = " "
+
+# Basic layout
+format = """
+$directory\
+$git_branch\
+$git_state\
+$cmd_duration\
+$line_break\
+$character"""
+

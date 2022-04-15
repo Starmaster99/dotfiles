@@ -1,0 +1,4 @@
+
+ttf-jetbrains-mono
+ttf-nerd-fonts-symbols
+

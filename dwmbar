@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Must be located in /usr/bin/. Otherwise, bar doesn't work.
+while true; do
+
+	$HOME/dwmscripts/dwmweather > $HOME/dwmscripts/dwmweather.txt
+	#$HOME/dwmscripts/dwmupdates > $HOME/dwmscripts/dwmupdates.txt
+
+	sleep 3600s
+
+done &
+
+while true; do
+	
+	# Oh I'm sure there is a better way of doing this
+	CPU=$($HOME/dwmscripts/dwmcpu)
+	RAM=$($HOME/dwmscripts/dwmram)
+	HDD=$($HOME/dwmscripts/dwmdisk)	
+	TIME=$($HOME/dwmscripts/dwmclock)
+	WEATHER=$(< $HOME/dwmscripts/dwmweather.txt)
+	# I do it sometimes anyway.
+	#UPDATES=$(< $HOME/dwmscripts/dwmupdates.txt)
+	xsetroot -name "| $WEATHER | $CPU | $RAM | $HDD | $TIME"
+
+	sleep 5s
+	
+done &
+
+
