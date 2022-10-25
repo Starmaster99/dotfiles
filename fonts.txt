@@ -1,2 +1,0 @@
-ttf-jetbrains-mono
-ttf-font-awesome
