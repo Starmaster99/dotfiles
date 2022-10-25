@@ -1,0 +1,32 @@
+base
+base-devel
+linux
+linux-firmware
+linux-lts
+linux-headers
+efibootmgr
+refind
+networkmanager
+$ sudo systemctl enable NetworkManager
+alsa-utils
+$ alsamixer (M at Master)
+wireguard-tools
+openresolv
+
+xorg
+xorg-xinit
+git
+
+ttf-jetbrains-mono
+ttf-font-awesome
+$ fc-cache -fv
+
+dwm
+picom
+alacritty
+feh
+nitrogen
+rofi
+
+neofetch
+htop
