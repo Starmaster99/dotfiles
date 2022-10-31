@@ -42,13 +42,6 @@ nitrogen --restore &
 
 setxkbmap -layout pl,ru -option grp:win_space_toggle
 
-picom --no-use-damage &
+picom --no-use-damage --config ~/.config/picom/picom.conf &
 
-# alt + shift + q
-while true; do
-	dwm >/dev/null 2>&1
-	killall dwmbar
-	dwmbar &
-done
-
-exec dwm
+exec bspwm

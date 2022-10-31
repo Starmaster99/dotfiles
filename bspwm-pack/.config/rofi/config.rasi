@@ -1,0 +1,26 @@
+/* appearance */
+@theme "~/.config/rofi/colors/nord.rasi"
+
+configuration {
+
+  /* modes & interface */
+  modi: "drun,ssh,filebrowser";
+  font: "JetBrains Mono 15";
+  show-icons: true;
+
+  /* SSH */
+  parse-known-hosts: true;
+
+  /* vim keys for navigation */
+  kb-row-up: "Alt+k";
+  kb-row-down: "Alt+j";
+  kb-mode-next: "Alt+l";
+  kb-mode-previous: "Alt+h";
+
+}
+
+window {
+  width: 40%;
+  height: 60%;
+}
+

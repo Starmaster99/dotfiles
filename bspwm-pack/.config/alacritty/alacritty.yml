@@ -1,0 +1,97 @@
+
+env:
+  TERM: xterm-256color
+
+window:
+  padding:
+    x: 10
+    y: 10
+
+  dynamic_padding: false
+
+  title: Alacritty
+
+  class:
+    instance: Alacritty
+    general: Alacritty
+
+  history: 10000
+
+# Font configuration
+font:
+  normal:
+    family: JetBrains Mono
+    style: Regular
+
+  bold:
+    family: JetBrains Mono
+    style: Bold
+
+  italic:
+    family: JetBrains Mono
+    style: Italic
+
+  bold_italic:
+    family: JetBrains Mono
+    style: Bold Italic
+  size: 14.0
+  
+#window.opacity: 0.8 
+#colors:
+#  primary:
+#    background: '#222324'
+#    foreground: '#BABABA'
+#
+#  # Normal colors
+#  normal:
+#    black: 	'#000000'
+#    red: 	'#e8341c'
+#    green: 	'#68c256'
+#    yellow: 	'#f2d42c'
+#    blue: 	'#1c98e8'
+#    magenta:	'#8e69c9'
+#    cyan: 	'#f04469'
+#    white: 	'#bababa'
+#
+#  # Bright colors
+#  bright:
+#    black: 	'#666666'
+#    red: 	'#e05a4f'
+#    green: 	'#77b869'
+#    yellow: 	'#efD64b'
+#    blue: 	'#387cd3'
+#    magenta: 	'#957bbe'
+#    cyan: 	'#f25f7f'
+#    white: 	'#bababa'
+
+# Colors (Nord)
+colors:
+  # Default colors
+  primary:
+    background: '0x2E3440'
+    foreground: '0xD8DEE9'
+
+  # Normal colors
+  normal:
+    black:   '0x3B4252'
+    red:     '0xBF616A'
+    green:   '0xA3BE8C'
+    yellow:  '0xEBCB8B'
+    blue:    '0x81A1C1'
+    magenta: '0xB48EAD'
+    cyan:    '0x88C0D0'
+    white:   '0xE5E9F0'
+
+  # Bright colors
+  bright:
+    black:   '0x4C566A'
+    red:     '0xBF616A'
+    green:   '0xA3BE8C'
+    yellow:  '0xEBCB8B'
+    blue:    '0x81A1C1'
+    magenta: '0xB48EAD'
+    cyan:    '0x8FBCBB'
+    white:   '0xECEFF4'
+
+# Theme: nord
+# https://github.com/eendroroy/alacritty-theme/blob/master/themes/nord.yaml
