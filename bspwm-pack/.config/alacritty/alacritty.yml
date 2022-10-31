@@ -35,8 +35,8 @@ font:
     family: JetBrains Mono
     style: Bold Italic
   size: 14.0
-  
-#window.opacity: 0.8 
+
+# Colors (my theme, wallpaper-based) 
 #colors:
 #  primary:
 #    background: '#222324'
@@ -65,13 +65,12 @@ font:
 #    white: 	'#bababa'
 
 # Colors (Nord)
+# https://github.com/eendroroy/alacritty-theme/blob/master/themes/nord.yaml
 colors:
-  # Default colors
   primary:
     background: '0x2E3440'
     foreground: '0xD8DEE9'
 
-  # Normal colors
   normal:
     black:   '0x3B4252'
     red:     '0xBF616A'
@@ -82,7 +81,6 @@ colors:
     cyan:    '0x88C0D0'
     white:   '0xE5E9F0'
 
-  # Bright colors
   bright:
     black:   '0x4C566A'
     red:     '0xBF616A'
@@ -92,6 +90,3 @@ colors:
     magenta: '0xB48EAD'
     cyan:    '0x8FBCBB'
     white:   '0xECEFF4'
-
-# Theme: nord
-# https://github.com/eendroroy/alacritty-theme/blob/master/themes/nord.yaml
