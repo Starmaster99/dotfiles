@@ -7,7 +7,7 @@
 read -p "Do you use NVIDIA videocard? (y/n) " has_nvidia
 read -p "Do you want to install and use bspwm? (y/n)" wm
 
-sudo pacman --noconfirm -Syu xorg xorg-init ueberzug picom alacritty feh nitrogen rofi neofetch htop flameshot ttf-jetbrains-mono ttf-font-awesome
+sudo pacman --noconfirm -Syu xorg xorg-init ueberzug picom alacritty feh nitrogen rofi neofetch htop flameshot ttf-jetbrains-mono ttf-font-awesome playerctl
 fc-cache -fv
 
 if [[ $has_nvidia == [yY] ]]

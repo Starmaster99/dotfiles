@@ -64,3 +64,13 @@ super + alt + {h,j,k,l}
 # move a floating window
 alt + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# these are fn keys on your keyboard
+XF86AudioPlay
+	playerctl play-pause &>/dev/null
+
+XF86Audio{Prev,Next}
+	playerctl {previous,next} &>/dev/null
+
+super + {Next,Prior}
+	sudo wg-quick {down,up} $HOME/wg.conf &>/dev/null
