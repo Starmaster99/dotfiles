@@ -19,8 +19,9 @@ bspc rule -a TelegramDesktop -o desktop=^5 state=fullscreen
 bspc rule -a mpv state=floating
 bspc rule -a Guvcview -o desktop=^4
 bspc rule -a guvcview state=floating rectangle=320x240+1600+840 sticky=on layer=above
-bspc rule -a code-oss state=fullscreen -o desktop=^3
+bspc rule -a VSCodium -o desktop ^3 state=fullscreen
 
 alacritty 2>/dev/null &
 telegram-desktop 2>/dev/null &
+VSCodium 2>/dev/null &
 firefox

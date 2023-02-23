@@ -65,7 +65,6 @@ super + alt + {h,j,k,l}
 alt + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
-# these are fn keys on your keyboard
 XF86AudioPlay
 	playerctl play-pause &>/dev/null
 
@@ -74,3 +73,6 @@ XF86Audio{Prev,Next}
 
 super + {Next,Prior}
 	sudo wg-quick {down,up} $HOME/wg.conf &>/dev/null
+
+XF86Audio{Mute,RaiseVolume,LowerVolume}
+	amixer -q set Master {toggle,5%+,5%-} &>/dev/null	
